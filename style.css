@@ -1,12 +1,17 @@
-#block_page
-{
+body{
+	display: flex;
+	justify-content: center;
+}
+
+*{
 	font-family: 'Raleway' , Arial;
+}
+
+#block_page
+{	
 	display: flex;
 	flex-direction: column;
-	width: auto;
-	margin: auto;
-	margin-right: 40px;
-	margin-left: 40px;
+	width: 1200px;
 }
 
 header img
@@ -24,17 +29,25 @@ header img
 
 }
 
+header h1{
+	margin-top: 40px;
+}
+
+nav ul{
+	padding-left: 0;
+}
+
 nav ul li
 {
 	display: inline-block;
 	list-style-type: none;
-	margin-top: 50px;
+	margin-top: 38px;
 }
 
 nav ul li a{
 	color: black;
 	text-decoration: none;
-	padding: 50px;
+	padding: 50px 50px 0px;
 }
 
 nav ul li a:hover{
@@ -54,7 +67,7 @@ header h1
 
 #pointeur{
 	border: 5px #F2F2F2 transparent;
-	padding: 17px;
+	padding: 15px;
 	background: #F2F2F2;
 	border-radius: 15px 0px 0px 15px;
 	font-size: 17px;
@@ -62,17 +75,14 @@ header h1
 
 #recherche form{
 	display: flex;
-	flex-direction: center;
-	flex-grow: center;
 	border: 1px #F2F2F2 solid;
-
 }
 
 form input{
 	border: none;
 	padding-left: 10px;
 	font-weight: bold;
-	font-size: 15px;
+	font-size: 13px;
 }
 
 .loupe_deck{
@@ -81,8 +91,8 @@ form input{
 	color: white;
 	font-weight: bold;
 	font-size: 17px;
-	padding-left:20px;
-	padding-right: 20px;
+	padding-left:17px;
+	padding-right: 17px;
 	border-radius: 0px 15px 15px 0px;
 }
 
@@ -90,9 +100,7 @@ form input{
 	display: none;
 	border: none;
 	background: #0065FC;
-	padding: 10px;
-	padding-right: 15px;
-	padding-left: 15px;
+	padding: 15px 13px 15px;
 	border-radius: 15px 15px 15px 15px;
 	font-size:17px;
 }
@@ -104,48 +112,25 @@ form input{
 
 #filtres
 {
-	display: flex;
-    margin: 30px auto;
-    
+	display: flex;  
+	margin: 30px 0px 0px ;
 }
 
-#filtres p{
-	margin-right: 20px;
-	font-weight: bold;
-}
-
-#filtres button{
-	border: none;
-	background: none;
-}
-
-#filtres button a{
-	color: black;
-	text-decoration: none;
-}
-
-#filtres button i{
-	color: #0065FC;
-	padding: 13px;
-	border: 1px #DEEBFF solid;
-	background: #DEEBFF;
-	border-radius: 50%;
+.filtre_p{
 	font-size: 17px;
 	font-weight: bold;
-}
-
-.bouton:hover{
-
-	background: #DEEBFF;
-	background: linear-gradient(0deg, rgba(0,101,252,1) 0%, rgba(222,235,255,1) 100%) ;
-}
-
-.bouton
-{
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
 	margin-right: 20px;
+}
+
+.filtre_2{
+	display: flex;
+}
+
+.bouton{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 15px;
 	width: auto;
 	height: 40px;
 	border: 3px grey solid;
@@ -155,13 +140,25 @@ form input{
 	padding-right: 10px;
 }
 
-.texte{
-	padding-right: 10px;
-	padding-left: 10px;
-	font-weight: bold;
+.bouton p{
+	justify-content: center;
+	margin-left: 10px;
 	font-size: 17px;
+	font-weight: bold;
 }
 
+.bouton i{
+	color: #0065FC;
+	padding: 17px;
+	background: #DEEBFF;
+	border-radius: 50%;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.bouton:hover{
+	background: linear-gradient(0deg, rgba(0,101,252,1) 0%, rgba(222,235,255,1) 100%) ;
+}
 
 #info{
 	display: flex;
@@ -185,55 +182,67 @@ form input{
 
 article, aside{
 	border-radius: 20px;
-	background: #F2F2F2;
-	margin: 40px;
-	padding: 40px;
+	background: #F2F2F2;	
+}
+
+#star{
+	display: flex;
 }
 
 #starB{
-	font-size: 13px;
+	font-size: 10px;
 	color: #0065FC;
 }
 
 #starG{
-	font-size: 13px;
+	font-size: 10px;
 	color: #F2F2F2;
 }
 
 article{
 	padding-top: -20px;
+	width: 70%;
+	margin-right: 30px;
 }
 
 #groupe_1{
 	display: flex;
+	margin-left: 20px;
 }
 
 #groupe_2{
 	display: flex;
+	margin-left: 20px;
 }
 
-article h1{
+article h1, article h3{
 	font-weight: bold;
 	font-size: 20px;
+	margin-left: 20px;
+	margin-top: 40px
 }
 
+
 #hebergement{
+	box-shadow: 4px 4px 4px lightgrey;
 	border-radius: 15px;
 	background: white;
-	margin: 15px;
-	padding: 10px;
+	margin: 20px;
+	padding: 5px;
 }
+/*texte et images pas suffisamment collé*/
 
 
 #hebergement a{
 	text-decoration: none;
 	color: black;
+	margin: 0;
 }
 
 
 #hebergement img{
-	width: 250px;
-	height: 140px;
+	width: 200px;
+	height: 100px;
 	object-fit: cover;
 	object-position: 80% 80%;
 	border-radius: 15px 15px 0px 0px;
@@ -242,10 +251,17 @@ article h1{
 #hebergement h2{
 	font-weight: bold;
 	font-size: 15px;
+	margin-bottom: none;
 }
 
 #hebergement p{
 	font-size: 13px;
+}
+
+aside{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
 }
 
 #tete_aside{
@@ -256,35 +272,38 @@ article h1{
 #tete_aside h1{
 	font-weight: bold;
 	font-size: 20px;
+	margin-left: 20px;
+	margin-top: 40px;
 }
 
 #tete_aside i{
-	margin-top: 20px;
+	margin-top: 40px;
 	font-size: 20px;
+	margin-right: 20px;
+}
+
+#block_pop{
+	display: flex;
+	flex-direction: column;
+	
 }
 
 #populaires img{
-	width: 130px;
+	width: 110px;
 	height: 130px;
 	object-fit: cover;
-	object-position: 50% 50%;
 	border-radius: 15px 0px 0px 15px;
+	padding-right: 10px;
 }
 
 #populaires{
+	box-shadow: 4px 4px 4px lightgrey;
 	border-radius: 15px;
 	background: white;
 	margin: 20px;
-	padding: 10px;
+	padding: 5px;
 	display: flex;
-}
-
-.detail{
-	margin-left: 20px;
-}
-
-.detail p{
-	margin-bottom: 50px;
+	height: 26%;
 }
 
 
@@ -295,11 +314,98 @@ article h1{
 
 #populaires h2{
 	font-weight: bold;
-	font-size: 15px;
+	font-size: 14px;
 }
 
 #populaires p{
-	font-size: 13px;
+	font-size: 12px;
+	margin-bottom: 30px;
+}
+
+#activite{
+	display: flex;
+}
+
+#activites{
+	margin-top: 40px;
+}
+
+#activite h2 {
+	font-weight: bold;
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+.Ablock_1, .Ablock_2{
+	display: flex;
+	flex-direction: column;
+}
+
+#activites h1{
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 30px;
+}
+
+#activites a{
+	text-decoration: none;
+	color: black;
+}
+
+#activites_G, #Pomegues, #Frioul, #activites_M{
+	box-shadow: 2px 2px 2px lightgrey;
+	border-radius: 15px 15px 15px 15px;
+	margin: 20px;
+}
+
+#activites_G img{
+	border-radius: 15px 15px 0px 0px;
+	object-fit: cover;
+	width: 260px;
+	height: 340px;
+}
+
+#Pomegues img{
+	border-radius: 15px 15px 0px 0px;
+	object-fit: cover;
+	width: 260px;
+	height: 160px;
+}
+
+#Frioul img{
+	border-radius: 15px 15px 0px 0px;
+	object-fit: cover;
+	width: 260px;
+	height: 100px;
+}
+
+#activites_M img{
+	border-radius: 15px 15px 0px 0px;
+	object-fit: cover;
+	width: 260px;
+	height: 130px;
+}
+
+footer{
+	display: flex;
+	background: #F2F2F2;
+	justify-content: space-around;
+}
+
+footer a{
+	text-decoration: none;
+	color: black;
+}
+
+footer h1{
+	font-weight: bold;
+	font-size: 17px;
+	margin-left: 40px;
+}
+
+footer li{
+	list-style-type: none;
+	margin-bottom: 10px;
 }
 
 
@@ -307,66 +413,132 @@ article h1{
 {
 	#block_page{
 		margin: 0px;
+		width: 100%;
 	}
+
+	#filtres button{
+		margin-bottom: 20px;
+	}
+
+	#Stop{
+		flex-direction: column;
+	}
+
+	article, aside{
+		margin: 0%;
+		margin-bottom: 20px;
+	}
+
+	article{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	aside{
+		width: 100%;
+	}
+
+	#block_pop{
+		width: 100%;
+		justify-content: space-between;
+		flex-direction: row;
+	}
+
+	#populaires{
+		flex-direction: column;
+		margin: 10px;
+		width: 250px;
+		height: 240px;
+	}
+
+	#populaires img{
+		border-radius: 15px 15px 0px 0px;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	#populaires p{
+		margin-bottom: 10px;
+	}
+
+	#activite{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	footer{
+		justify-content: center;
+	}
+
 }
 
 @media screen and (max-width: 768px)
 {
+	body{
+		justify-content: center;
+		overflow-x: hidden;
+	}
+
 	#block_page{
-		margin: 0px;
+		justify-content: space-between;
+		margin-right: 0px;
+		margin-left: 0px;
 		width: auto;
 	}
 
 	#tete{
 		flex-direction: column;
+		align-items: center;
 	}
 
 	header img{
 		text-align: center;
-		margin-top: 0px;
-		margin-left: 40%;
-		margin-bottom: 30px;
+		margin-top: 25px;
 		max-height: 65px;
 		max-width: 120px;
 	}
 
 	nav{
-		display: flex;
-		justify-content: space-between;
-		device-width: 100%;
+		margin: 0px;
+		width: 100%;
 	}
 
+
 	nav ul li{
-		margin: 0px;
+		
 		margin-bottom: 15px;
 	}
 
 	nav ul{
 		display: flex;
+		border-bottom: 3px #F2F2F2 solid;
+		justify-content: space-around;
+		margin-top: 0px;
 	}
 
 	nav ul li a{
 		font-size: 20px;
-		border-bottom: 3px #F2F2F2 solid;
-		padding-bottom: 15px;
+		padding: 0px 0px 15px;
+
 	}
 
 	nav ul li a:hover{
 		border-top: none;
 		border-bottom: 2px #0065FC solid;
+	
+		justify-content: space-between;
 	}
 
 	header h1{
-		font-size: 30px;
+		font-size: 20px;
+		margin: 0px 20px 0px;
 	}
 
 	header p{
-		font-size: 20px;
-	}
-
-	#recherche{
-		width: 100%;
-		height: 100%;
+		font-size: 15px;
+		margin: 10px 20px 30px;
 	}
 
 	.loupe_deck{
@@ -374,20 +546,134 @@ article h1{
 	}
 
 	.loupe_smart{
-	display: flex;
-	align-items: center;
+		display: flex;
+		align-items: center;
+	}
+
+	#recherche{
+		justify-content: center;
+	}
+
+	#pointeur{
+		padding: 15px;
+		background: #F2F2F2;
+		border-radius: 15px 0px 0px 15px;
+		font-size: 20px;
+	}
+
+	#recherche form{
+		display: flex;
+		flex-direction: center;
+		flex-grow: center;
+		border: 1px #F2F2F2 solid;
+		width: 200px;
+	}
+
+	form input{
+		border: none;
+		padding-left: 20px;
+		font-weight: bold;
+		font-size: 15px;
+	}
+
+	#filtres{
+		flex-direction: column;
+		margin: 10px;
+	}
+
+	.bouton{
+		margin: 10px;
+		max-width: fit-content;
+	}
+
+	.bouton p{
+		margin-top:30px;
 	}
 
 	.filtre_2{
-		flex-wrap: warp;
+		flex-wrap: wrap;
+		flex-direction: column;
+		margin-bottom: 10px;
 	}
 
-	.filtre_2 button{
-		
+	.filtre_2 bouton {
+		margin-bottom: 5px;
+	}
+
+	#info{
+		margin: 0px 20px 0px;
 	}
 
 	#Stop{
 		flex-direction: column-reverse;
+		margin: 0px;
+		padding: 0px;		
+	}
+
+	aside, article{
+		margin: 0px;
+
+	}
+
+	#tete_aside i{
+		margin-top: 40px;
+	}
+
+	#block_pop{
+		flex-direction: column;
+	}
+
+	#populaires{
+		box-shadow: 4px 4px 4px lightgray;
+		width: 85%;
+		margin: auto;
+		padding: 5px;
+		margin-bottom: 10px;
+	}
+
+	#populaires img{
+		width: 100%;
+		border-radius: 15px 15px 0px 0px;
+	}
+
+	article{
+		flex-direction: column;
+		background: none;
+		margin: auto;
+	}
+
+	#groupe_1, #groupe_2{
+		flex-direction: column;
+		margin: 0px;
+	}
+
+	#hebergement{
+		margin: auto;
+		margin-bottom: 10px;
+		width: 85%;
+	}
+
+	#hebergement img{
+		width: 100%;
+	}
+
+	#activite{
+		flex-direction: column;
+	}
+
+	#activites_G, #Pomegues, #Frioul, #activites_M{
+		margin: auto;
+		width: 85%;
+		margin-bottom: 10px;
+	}
+
+	#activites_G img, #Pomegues img, #Frioul img, #activites_M img{
+		width: 100%;
+		height: 100px;
+	}
+
+	footer{
+		flex-direction: column;
 	}
 
 }
