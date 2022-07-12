@@ -1,10 +1,11 @@
-body{
-	display: flex;
-	justify-content: center;
-}
-
 *{
 	font-family: 'Raleway' , Arial;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	
 }
 
 #block_page
@@ -12,6 +13,8 @@ body{
 	display: flex;
 	flex-direction: column;
 	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 header img
@@ -33,26 +36,45 @@ header h1{
 	margin-top: 40px;
 }
 
+nav{
+	display: flex;
+	align-items: flex-end;
+	height: 100px;
+}
+
 nav ul{
 	padding-left: 0;
+	display: flex;
 }
 
 nav ul li
 {
-	display: inline-block;
+	display: flex;
 	list-style-type: none;
-	margin-top: 38px;
+	justify-content: center;
 }
 
-nav ul li a{
-	color: black;
+.nav_page a{
 	text-decoration: none;
-	padding: 50px 50px 0px;
+	color: black;
+	margin: 0;
+	padding-top: 60px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 
-nav ul li a:hover{
+.nav_page{
+	width: 210px;
+	
+}
+
+.nav_page a:hover{
 	color: #0065FC;
-	border-top: 3px #0065FC solid;
+	border-top: 5px #0065FC solid;
+	color: #0065FC;
+	padding: 0;
+	padding-top: 54px;
 }
 
 header h1
@@ -185,22 +207,22 @@ article, aside{
 	background: #F2F2F2;	
 }
 
-#star{
+.star{
 	display: flex;
+	margin-bottom: 5px;
 }
 
-#starB{
+.starB{
 	font-size: 10px;
 	color: #0065FC;
 }
 
-#starG{
+.starG{
 	font-size: 10px;
 	color: #F2F2F2;
 }
 
 article{
-	padding-top: -20px;
 	width: 70%;
 	margin-right: 30px;
 }
@@ -215,32 +237,44 @@ article{
 	margin-left: 20px;
 }
 
-article h1, article h3{
+article h2, article h4{
 	font-weight: bold;
 	font-size: 20px;
 	margin-left: 20px;
 	margin-top: 40px
 }
 
+article h3{
+	font-weight: bold;
+	font-size: 15px;
+	margin: 0;
+	margin-top: 5px;
+}
 
-#hebergement{
+article p{
+	margin: 0;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+.hebergement{
 	box-shadow: 4px 4px 4px lightgrey;
 	border-radius: 15px;
 	background: white;
 	margin: 20px;
 	padding: 5px;
 }
-/*texte et images pas suffisamment collé*/
 
 
-#hebergement a{
+.hebergement a{
 	text-decoration: none;
 	color: black;
 	margin: 0;
 }
 
 
-#hebergement img{
+.hebergement img{
 	width: 200px;
 	height: 100px;
 	object-fit: cover;
@@ -248,13 +282,12 @@ article h1, article h3{
 	border-radius: 15px 15px 0px 0px;
 } 
 
-#hebergement h2{
+.hebergement h2{
 	font-weight: bold;
 	font-size: 15px;
-	margin-bottom: none;
 }
 
-#hebergement p{
+.hebergement p{
 	font-size: 13px;
 }
 
@@ -269,7 +302,7 @@ aside{
 	justify-content: space-between;
 }
 
-#tete_aside h1{
+#tete_aside h4{
 	font-weight: bold;
 	font-size: 20px;
 	margin-left: 20px;
@@ -288,7 +321,7 @@ aside{
 	
 }
 
-#populaires img{
+.populaires img{
 	width: 110px;
 	height: 130px;
 	object-fit: cover;
@@ -296,7 +329,7 @@ aside{
 	padding-right: 10px;
 }
 
-#populaires{
+.populaires{
 	box-shadow: 4px 4px 4px lightgrey;
 	border-radius: 15px;
 	background: white;
@@ -307,19 +340,23 @@ aside{
 }
 
 
-#populaires a{
+.populaires a{
 	text-decoration: none;
 	color: black;
 }
 
-#populaires h2{
+.populaires h2{
 	font-weight: bold;
 	font-size: 14px;
 }
 
-#populaires p{
+.populaires p{
 	font-size: 12px;
 	margin-bottom: 30px;
+}
+
+.populaires .star{
+	margin-top: 40px;
 }
 
 #activite{
@@ -336,15 +373,17 @@ aside{
 	margin-left: 10px;
 }
 
-.Ablock_1, .Ablock_2{
+#Ablock_1, #Ablock_2{
 	display: flex;
 	flex-direction: column;
 }
 
-#activites h1{
+#activites h3{
 	font-weight: bold;
-	font-size: 20px;
-	margin-left: 30px;
+	font-size: 15px;
+	margin: 0;
+	margin: 15px 15px 15px;
+
 }
 
 #activites a{
@@ -352,13 +391,13 @@ aside{
 	color: black;
 }
 
-#activites_G, #Pomegues, #Frioul, #activites_M{
+.activites_G, #Pomegues, #Frioul, .activites_M{
 	box-shadow: 2px 2px 2px lightgrey;
 	border-radius: 15px 15px 15px 15px;
 	margin: 20px;
 }
 
-#activites_G img{
+.activites_G img{
 	border-radius: 15px 15px 0px 0px;
 	object-fit: cover;
 	width: 260px;
@@ -379,7 +418,7 @@ aside{
 	height: 100px;
 }
 
-#activites_M img{
+.activites_M img{
 	border-radius: 15px 15px 0px 0px;
 	object-fit: cover;
 	width: 260px;
@@ -389,7 +428,14 @@ aside{
 footer{
 	display: flex;
 	background: #F2F2F2;
+	width: 100%;
+	justify-content: center;
+}
+
+#texte_footer{
+	display: flex;
 	justify-content: space-around;
+	width: 1200px;
 }
 
 footer a{
@@ -397,7 +443,7 @@ footer a{
 	color: black;
 }
 
-footer h1{
+footer h2{
 	font-weight: bold;
 	font-size: 17px;
 	margin-left: 40px;
@@ -429,6 +475,10 @@ footer li{
 		margin-bottom: 20px;
 	}
 
+	#groupe_1,#groupe_2{
+		justify-content: center;
+	}
+
 	article{
 		width: 100%;
 		display: flex;
@@ -446,21 +496,26 @@ footer li{
 		flex-direction: row;
 	}
 
-	#populaires{
+	.populaires{
 		flex-direction: column;
 		margin: 10px;
 		width: 250px;
-		height: 240px;
+		height: 236px;
 	}
 
-	#populaires img{
+	.populaires img{
 		border-radius: 15px 15px 0px 0px;
-		width: 100%;
 		object-fit: cover;
+		width: auto;
+		padding-right: 0px;
 	}
 
-	#populaires p{
+	.populaires p{
 		margin-bottom: 10px;
+	}
+
+	.populaires .star{
+		margin-top: 10px;
 	}
 
 	#activite{
@@ -505,30 +560,28 @@ footer li{
 		width: 100%;
 	}
 
-
-	nav ul li{
-		
-		margin-bottom: 15px;
-	}
-
 	nav ul{
 		display: flex;
 		border-bottom: 3px #F2F2F2 solid;
 		justify-content: space-around;
 		margin-top: 0px;
+		width: 100%;
 	}
 
-	nav ul li a{
+	.nav_page{
+
+		width: 50%;
+	}
+
+	.nav_page a{
 		font-size: 20px;
 		padding: 0px 0px 15px;
 
 	}
 
-	nav ul li a:hover{
+	.nav_page a:hover{
 		border-top: none;
-		border-bottom: 2px #0065FC solid;
-	
-		justify-content: space-between;
+		border-bottom: 3px #0065FC solid;
 	}
 
 	header h1{
@@ -563,8 +616,6 @@ footer li{
 
 	#recherche form{
 		display: flex;
-		flex-direction: center;
-		flex-grow: center;
 		border: 1px #F2F2F2 solid;
 		width: 200px;
 	}
@@ -592,11 +643,10 @@ footer li{
 
 	.filtre_2{
 		flex-wrap: wrap;
-		flex-direction: column;
 		margin-bottom: 10px;
 	}
 
-	.filtre_2 bouton {
+	.filtre_2 .bouton {
 		margin-bottom: 5px;
 	}
 
@@ -623,7 +673,7 @@ footer li{
 		flex-direction: column;
 	}
 
-	#populaires{
+	.populaires{
 		box-shadow: 4px 4px 4px lightgray;
 		width: 85%;
 		margin: auto;
@@ -631,9 +681,10 @@ footer li{
 		margin-bottom: 10px;
 	}
 
-	#populaires img{
+	.populaires img{
 		width: 100%;
 		border-radius: 15px 15px 0px 0px;
+		padding-right: 0px;
 	}
 
 	article{
@@ -647,13 +698,13 @@ footer li{
 		margin: 0px;
 	}
 
-	#hebergement{
+	.hebergement{
 		margin: auto;
 		margin-bottom: 10px;
 		width: 85%;
 	}
 
-	#hebergement img{
+	.hebergement img{
 		width: 100%;
 	}
 
@@ -661,18 +712,18 @@ footer li{
 		flex-direction: column;
 	}
 
-	#activites_G, #Pomegues, #Frioul, #activites_M{
+	.activites_G, #Pomegues, #Frioul, .activites_M{
 		margin: auto;
 		width: 85%;
 		margin-bottom: 10px;
 	}
 
-	#activites_G img, #Pomegues img, #Frioul img, #activites_M img{
+	.activites_G img, #Pomegues img, #Frioul img, .activites_M img{
 		width: 100%;
 		height: 100px;
 	}
 
-	footer{
+	#texte_footer{
 		flex-direction: column;
 	}
 
