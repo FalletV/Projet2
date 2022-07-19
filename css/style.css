@@ -1,3 +1,4 @@
+/* Définition des régles de la page*/
 *{
 	font-family: 'Raleway' , Arial;
 }
@@ -16,6 +17,8 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 }
+
+/*Header de la page*/
 
 header img
 {
@@ -51,25 +54,24 @@ nav ul{
 nav ul li
 {
 	display: flex;
-	list-style-type: none;
 	justify-content: center;
+	list-style-type: none;
 }
 
 .nav_page a{
-	text-decoration: none;
-	color: black;
-	margin: 0;
 	display: flex;
 	justify-content: center;
 	width: 210px;
+	margin: 0;
 	padding-top: 65px;
-
+	text-decoration: none;
+	color: black;	
 }
 
 .nav_page a:hover{
-	color: #0065FC;
 	border-top: 5px #0065FC solid;	
-	padding-top: 60px;
+	padding-top: 60px;	
+	color: #0065FC;
 }
 
 header h1
@@ -192,6 +194,8 @@ form input{
 	margin-right: 10px;
 }
 
+/*Corps de la page*/
+
 #Stop{
 	display: flex;
 	
@@ -201,6 +205,8 @@ article, aside{
 	border-radius: 20px;
 	background: #F2F2F2;	
 }
+
+/*Régles opour toutes les étoiles*/
 
 .star{
 	display: flex;
@@ -216,6 +222,13 @@ article, aside{
 	font-size: 10px;
 	color: #F2F2F2;
 }
+
+.star1{
+	display: flex;
+	margin-bottom: 5px;
+}
+
+/*Bloque Hébergements*/
 
 article{
 	width: 70%;
@@ -252,7 +265,6 @@ article p{
 	margin-bottom: 5px;
 }
 
-
 .hebergement{
 	box-shadow: 4px 4px 4px lightgrey;
 	border-radius: 15px;
@@ -286,6 +298,8 @@ article p{
 	font-size: 13px;
 }
 
+/*Bloque polulaire*/
+
 aside{
 	display: flex;
 	flex-direction: column;
@@ -312,8 +326,7 @@ aside{
 
 #block_pop{
 	display: flex;
-	flex-direction: column;
-	
+	flex-direction: column;	
 }
 
 .populaires img{
@@ -353,6 +366,12 @@ aside{
 .populaires .star{
 	margin-top: 40px;
 }
+
+.populaires .star1{
+	margin-top: 58px;
+}
+
+/*Bloque activité*/
 
 #activite{
 	display: flex;
@@ -420,11 +439,13 @@ aside{
 	height: 130px;
 }
 
+/*Footer*/
+
 footer{
 	display: flex;
-	background: #F2F2F2;
-	width: 100%;
 	justify-content: center;
+	width: 100%;
+	background: #F2F2F2;		
 }
 
 #texte_footer{
@@ -478,21 +499,21 @@ footer li{
 		justify-content: center;
 	}
 
-	article{
-		width: 100%;
+	article{		
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
+		width: 100%;
 	}
 
 	aside{
 		width: 100%;
 	}
 
-	#block_pop{
-		width: 100%;
+	#block_pop{		
 		justify-content: space-between;
 		flex-direction: row;
+		width: 100%;
 	}
 
 	.populaires{
@@ -515,6 +536,10 @@ footer li{
 
 	.populaires .star{
 		margin-top: 10px;
+	}
+
+	.populaires .star1{
+		margin-top: 25px;
 	}
 
 	#activite{
@@ -682,6 +707,7 @@ footer li{
 	.populaires{
 		box-shadow: 4px 4px 4px lightgray;
 		width: 85%;
+		height: auto;
 		margin: auto;
 		padding: 5px;
 		margin-bottom: 10px;
@@ -691,6 +717,14 @@ footer li{
 		width: 100%;
 		border-radius: 15px 15px 0px 0px;
 		padding-right: 0px;
+	}
+
+	.populaires p{
+		margin-bottom: 0;
+	}
+
+	.populaires .star1{
+		margin-bottom: 5px;
 	}
 
 	article{
@@ -712,6 +746,11 @@ footer li{
 
 	.hebergement img{
 		width: 100%;
+	}
+
+	#activites h2{
+		margin-left: 20px;
+		font-size: 20px;
 	}
 
 	#activite{
