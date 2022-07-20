@@ -179,6 +179,13 @@ form input{
 	background: linear-gradient(0deg, rgba(0,101,252,1) 0%, rgba(222,235,255,1) 100%) ;
 }
 
+/*Corps de la page*/
+
+#Stop{
+	display: flex;
+	flex-direction: column;
+}
+
 #info{
 	display: flex;
 }
@@ -194,11 +201,8 @@ form input{
 	margin-right: 10px;
 }
 
-/*Corps de la page*/
-
-#Stop{
+#section_body{
 	display: flex;
-	
 }
 
 article, aside{
@@ -490,6 +494,10 @@ footer li{
 		flex-direction: column;
 	}
 
+	#section_body{
+		flex-direction: column;
+	}
+
 	article, aside{
 		margin: 0%;
 		margin-bottom: 20px;
@@ -686,9 +694,13 @@ footer li{
 	}
 
 	#Stop{
-		flex-direction: column-reverse;
+		flex-direction: column;
 		margin: 0px;
 		padding: 0px;		
+	}
+
+	#section_body{
+		flex-direction: column-reverse;
 	}
 
 	aside, article{
