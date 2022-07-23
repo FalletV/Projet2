@@ -201,6 +201,11 @@ form input{
 	margin-right: 10px;
 }
 
+#info h2{
+	font-size: 15px;
+	font-weight: normal;
+}
+
 #section_body{
 	display: flex;
 }
